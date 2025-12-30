@@ -3,6 +3,7 @@
   "displayName": "vscode-git-diff",
   "description": "A VSCode extension to compare the active file against a selected commit from history. (similar to JetBrains IDEs' Compare.Selected action)",
   "version": "0.0.1",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.107.0"
   },
