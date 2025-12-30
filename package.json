@@ -9,9 +9,18 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "workspaceContains:.git"
+  ],
   "main": "./out/extension.js",
-  "contributes": {},
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-git-diff.openChange",
+        "title": "Git Diff: Open Change"
+      }
+    ]
+  },
   "scripts": {
     "package": "vsce package",
     "vscode:prepublish": "pnpm run compile",
