@@ -20,6 +20,10 @@ There are 2 ways to install this extension:
 
 ### Keybindings
 
+#### Default Keybindings
+
+- `ctrl+shift+d` : Open Git Diff with commit selection
+
 #### VSCodeVim Keybindings: for nerds (Example)
 
 ```json
@@ -31,7 +35,7 @@ There are 2 ways to install this extension:
     },
     {
       "before": ["space", "g", "D"],
-      "commands": [{ "command": "git.openChange" }] // Default git diff
+      "commands": [{ "command": "git.openChange" }] // Default Git diff
     }
   ]
 }

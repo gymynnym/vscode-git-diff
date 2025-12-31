@@ -2,7 +2,7 @@
   "name": "vscode-git-diff",
   "displayName": "vscode-git-diff",
   "description": "A VSCode extension to compare the active file against a selected commit from history. (similar to JetBrains IDEs' Compare.Selected action)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "icon": "assets/icon.png",
   "license": "MIT",
   "publisher": "gymynnym",
@@ -31,7 +31,12 @@
         "command": "vscode-git-diff.openChange",
         "title": "Git Diff: Open Change"
       }
-    ]
+    ],
+    "keybindings": {
+      "command": "vscode-git-diff.openChange",
+      "key": "ctrl+shift+d",
+      "when": "editorTextFocus && workspaceContainsGit"
+    }
   },
   "scripts": {
     "package": "vsce package",
